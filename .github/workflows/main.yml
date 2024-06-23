@@ -13,7 +13,6 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
 
-    steps:
     - name: Run compilation in docker container
       run: docker compose up --build cv-compiler
 
