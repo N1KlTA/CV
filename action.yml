@@ -1,0 +1,29 @@
+name: Recompile CV
+
+on:
+  push:
+    branches:
+      - main  # Trigger the workflow on push to the main branch
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Run compilation in docker container
+      run: docker compose up --build cv-compiler
+
+    - name: Delete old version
+      run: rm CV.pdf
+
+    - name: Copy new CV from container
+      run: docker cp cv-compiler:/CV.pdf ./CV.pdf
+
+    - name: Upload PDF to actions
+      uses: actions/upload-artifact@v2
+      with:
+        name: CV
+        path: CV.pdf

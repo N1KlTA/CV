@@ -1,0 +1,304 @@
+%-------------------------
+% Resume in Latex
+% Author : Tejas Khairnar
+%------------------------
+
+%---- Required Packages and Functions ----
+
+\documentclass[a4paper,11pt]{article}
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{ragged2e}
+\usepackage[empty]{fullpage}
+\usepackage{wrapfig}
+\usepackage{lipsum}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{cfr-lm}
+\usepackage[T1]{fontenc}
+\usepackage{fontawesome}
+\usepackage[most]{tcolorbox}
+
+
+% Set the margins
+\geometry{left=0.85cm, top=0.8cm, right=0.85cm, bottom=0.2cm}
+
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+
+%-------------------------
+% Custom commands
+
+\newcommand{\resumePOR}[3]{
+\vspace{0.5mm}\item[]
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \hspace{-3mm}{#1}:\hspace{1mm} & \hspace*{0pt}\hfill{\footnotesize{ #3}} \vspace{-0.5mm}\\ \hspace{-2.9mm}#2 
+    \end{tabular*}
+    \vspace{0mm}
+}
+
+\newcommand{\resumeExp}[4]{
+\vspace{0mm}\item[]
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \hspace{-4.4mm} \small\textbf{#1} & {\footnotesize{#3}}\vspace{-1.2mm}\\
+        \hspace{-4.3mm} \footnotesize{\text{#2}} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-6.1mm}
+}
+
+\newcommand{\resumeProject}[4]{
+\vspace{0mm}\item[]
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \hspace{-4.4mm} \small\textbf{#1} & {\footnotesize{#3}}\vspace{-1mm}\\
+        \hspace{-4.3mm} \footnotesize{\text{#2}} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-6.5mm}
+}
+
+\newcommand{\resumeEdu}[4]{
+\vspace{0mm}\item[]
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \hspace{-4.3mm} \small\textbf{#1} & \footnotesize{#3}\vspace{-1mm} \\
+        \hspace{-4.3mm} \footnotesize{#2} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-3.2mm}
+}
+
+\newcommand{\resumeAchieve}[3]
+{
+\hspace{-3.1mm}\textbf{ #1} & {#2} & \hspace{3mm}\footnotesize{#3}
+\vspace{0mm}\\
+}
+
+
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,labelsep=0mm,itemsep=-0mm]}
+
+\newcommand{\resumeItemListStart}{\begin{justify}\begin{itemize}[leftmargin=3ex, rightmargin=2ex, noitemsep,labelsep=1.2mm,itemsep=0mm]\small}
+
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{-2mm}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\end{justify}\vspace{-1.5mm}}
+
+\renewcommand{\arraystretch}{1}
+
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}%
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
+\newcolumntype{C}{>{\centering\arraybackslash}X}%
+%---- End of Packages and Functions ------
+
+
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%
+
+\newcommand{\name}{Nikita Ilin} % Your Name
+\newcommand{\course}{B.Tech -Computer Science and Engineering} % Your Course
+\newcommand{\roll}{xxxxxxxx} % Your Roll No.
+\newcommand{\phone}{+971(058)595-1239} % Your Phone Number
+\newcommand{\emaila}{ilinna412@gmail.com} %Email 1
+\newcommand{\github}{N1KlTA} %Github
+\newcommand{\website}{https://example.com} %Website
+\newcommand{\tg}{N1KlT4} %telegram
+\newcommand{\codeforces}{N1KlTA} %codeforces
+
+
+
+\begin{document}
+\fontfamily{cmr}\selectfont
+
+
+%----------HEADING-----------------
+\begin{center}
+    \LARGE{\textbf{\name}}
+\end{center}
+\vspace{-6.5mm}
+\begin{center}
+    \small{\href{https://github.com/\github}{\faGithub \hspace{0.2mm} GitHub: \github} | \href{https://codeforces.com/profile/\codeforces}{CodeForces: \codeforces} | \href{https://t.me/\tg}{\faSend \hspace{0.2mm} Telegram: @\tg} | \href{mailto:\emaila}{ \emaila} | \faPhone \hspace{0.2mm} \phone }
+\end{center}
+\vspace{-3mm}
+
+%-----------OBJECTIVE-----------------
+
+%\vspace{-2.5mm}
+\section{Objective}
+CS student with strong knowledge in mathematics and programming. My main interests in math are combinatorics and graph theory, in computer science I have a huge experience in sport programming, my main language is a C++ and Python as a second language (more for research). Also I have some practice in databases, low-level programming, machine and deep learning, multithreading, web technologies and other areas of CS education. My skills are ahead of my grade because I study a lot at my own. Right now I want to get more real practice in backend development.
+%\vspace{-3.5mm}
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeExp
+{HFT NDA}
+{Quantative researcher}
+{Oct 2023 - Jan 2024}
+{Dubai, UAE}
+\resumeItemListStart
+\item[$\bullet$] Inventing high-frequency trading models
+\item[$\bullet$] Research hypotheses in python jupiter notebook with using standart libraries like Pandas, NumPy and Matplotlib
+\item[$\bullet$] Designing and porting a test model to C++ using a special internal framework for subsequent testing and improvement
+\resumeItemListEnd
+
+\resumeExp
+{Ethflow inc.}
+{Software engineer}
+{Apr 2024 - Current time}
+{Remote}
+\resumeItemListStart
+\item[$\bullet$] Providing a software for cryptocurrency trading
+\item[$\bullet$] Working with various smart contracts
+\item[$\bullet$] Designing and implementing microservices on Go language
+\resumeItemListEnd
+
+
+\resumeSubHeadingListEnd
+\vspace{-5.5mm}
+
+
+%-----------EDUCATION-----------------
+
+\vspace{-2.5mm}
+\section{Education}
+
+\resumeSubHeadingListStart
+\resumeEdu
+{High School of Economics, Moscow, Russia} 
+{BSc in Computer Science and data analysis} 
+{Sep 2023 - Current time} %Event Dates
+{GPA: 8.07/10.0} %Website
+\
+\resumeEdu
+{Neapolis University Pafos, Paphos, Cyprus} 
+{BSc in Applied Computer Science granted by JetBrains} 
+{Oct 2022 - Aug 2023} %Event Dates
+{GPA: 8.15/10.0} %Website
+\
+\resumeEdu
+{Presidential Physics and Mathematics Lyceum №239, Saint Petersburg, Russia} 
+{5th - 11th grade} 
+{Sep 2015 - May 2022} %Event Dates
+{GPA: 4.06/5.00} %Website
+\
+\resumeEdu
+{Mathematical Center at the 30 and 239 Lyceums, Saint Petersburg, Russia} 
+{Additional education in Olympiad mathematics} 
+{Sep 2014 - May 2022} %Event Dates
+\
+\resumeSubHeadingListEnd
+\vspace{-3.5mm}
+
+
+% %-----------PROJECTS-----------------
+% \section{Projects}
+% \resumeSubHeadingListStart
+
+% \resumeProject
+% {Project 1}
+% {Prof. XYZ,  IIT Guwahati} %Project Name, Location Name
+% {Jul 2020 - Nov 2020} %Event Dates
+% {\href{https://github.com/}{git.io/xxxx}} 
+% \resumeItemListStart
+% \item[$\bullet$] Project Description 1
+% \item[$\bullet$] Project Description 2
+% \resumeItemListEnd
+
+
+% \resumeProject
+% {Project 2} %Project Name
+% {Coding Club, IIT Guwahati} %Project Name, Location Name
+% {Apr 2020 - Jul 2020} %Event Dates
+% {\href{https://github.com/}{git.io/xxxx}} %Website
+% \resumeItemListStart
+% \item[$\bullet$] Project Description 1
+% \item[$\bullet$] Project Description 2
+% \resumeItemListEnd
+
+% \resumeProject
+% {Project 3} %Project Name
+% {Students' Web Committee, IIT Guwahati} %Project Name, Location Name
+% {Jan 2020 - Apr 2020} %Event Dates
+% {\href{https://github.com/}{git.io/xxxx}} %Website
+% \resumeItemListStart
+% \item[$\bullet$] Project Description 1
+% \item[$\bullet$] Project Description 2
+% \resumeItemListEnd
+
+
+% \resumeProject
+% {Other Projects}{}{}{}
+% \vspace{-3.5mm}
+% \resumeItemListStart
+% \item[$\bullet$] \textbf{Project 4 \raisebox{-0.3mm}{\href{https://github.com/}{\footnotesize\faExternalLink}} :} Project Description
+
+% \item[$\bullet$] \textbf{Project 5 \raisebox{-0.3mm}{\href{https://github.com/}{\footnotesize\faExternalLink}} :} Project Description
+
+% \resumeItemListEnd
+% \resumeSubHeadingListEnd
+
+% \vspace{-5.5mm}
+
+\section{Achievements}
+\vspace{0.2mm}
+\small{\begin{tabular*}{\textwidth}[t]{p{0.22\textwidth} p{0.68\textwidth}@{\extracolsep{\fill}}r}
+
+
+\resumeAchieve{First prize}{IMC - International Mathematics Competition
+for University Students}{2023}
+
+\resumeAchieve{Participant}{NEERC (ICPC semi-final) from Cyprus ("Ungifteds" team)}{2023}
+
+\resumeAchieve{2000+ rating}{CodeForces platform}{2023}
+
+\resumeAchieve{Prize-winner}{All-Russian Olympiad of schoolchildren in mathematics for the 11th grade}{2022}
+
+\resumeAchieve{Prize-winner}{All-Russian Olympiad of schoolchildren in mathematics for the 10th grade}{2021}
+
+\resumeAchieve{Participant}{All-Russian Olympiad of schoolchildren in physics for the 9th grade}{2019}
+
+\resumeAchieve{Participant}{Eight educational programs of the Sirius Educational Center}{2017 - 2022}
+
+\resumeAchieve{Many diplomas}{Regional Olympiads in mathematics, physics, economics, computer science and e.t.c.}{2019 - 2022}
+
+\resumeAchieve{Many diplomas}{Prestigious St. Petersburg City Olympiad in Mathematics}{2016 - 2022}
+
+\resumeAchieve{Many diplomas}{All-Russian Euler and Maxwell Olympiads}{2017 - 2019}
+\end{tabular*}}
+
+\vspace{-2.5mm}
+\section{Technical Skills}
+\vspace{0.2mm}
+
+\small{\begin{tabular*}{\textwidth}[t]{p{0.5\textwidth} p{0.5\textwidth}}
+\hspace{-3.1mm}{\textbf{ Main programming language: } C++} & {\textbf{ Other languages: } Python, Go, Kotlin, Assembler, PHP} \\  
+\hspace{-3.1mm}{\textbf{ Web Technologies: } HTML, CSS, JavaScript} & {\textbf{ Miscellaneous: } SQL, Git, Shell, Latex} \\
+\end{tabular*}}
+
+\vspace{-2.5mm}
+\section{Technical Knowledge}
+\vspace{0.2mm}
+
+\small{\begin{tabular*}{\textwidth}[t]{p{\textwidth}}
+\hspace{-3.1mm}\textbf{ Computer Science: }{Machine and Deep Learning, Data Structures and Algorithms, Multithreading, Computer Architecture}\\
+\hspace{-3.1mm}\textbf{ Mathematics: }{Discrete Maths, Probability and Statistics, Math Analysis, Linear Algebra, Olympiad Mathematics}
+\end{tabular*}}
+
+\vspace{0mm}
+
+%-------------------------------------------
+\end{document}
+

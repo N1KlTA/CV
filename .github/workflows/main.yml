@@ -1,0 +1,23 @@
+name: Publish new CV
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Recompile CV
+      uses: ./action.yml
+
+    - name: Upload PDF to actions
+      uses: actions/upload-artifact@v2
+      with:
+        name: CV
+        path: CV.pdf
