@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  CV compiled:
+  compile-new-cv:
     runs-on: ubuntu-latest
 
     steps:
