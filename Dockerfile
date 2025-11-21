@@ -1,4 +1,4 @@
-FROM debian:10.2
+FROM debian:bookworm
 
 RUN apt-get update && apt-get install --yes --no-install-recommends \
     texlive-full
